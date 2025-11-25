@@ -1,0 +1,14 @@
+@DRAPI_HostAddress = http://localhost:5182
+
+GET {{DRAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{DRAPI_HostAddress}}/CFDI
+Accept: application/json
+body:"{
+  ObjType: 13,
+  DocEntry: 123
+}"
+###
